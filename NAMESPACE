@@ -1,0 +1,21 @@
+##
+## NAMESPACE file for modelUtils library.
+##
+useDynLib(modelUtils)
+
+export(fitModel)
+export(multinomial)
+
+importFrom(stats, residuals, coefficients, predict)
+importFrom(graphics, plot)
+
+S3method(print, modelUtils)
+S3method(summary, modelUtils)
+S3method(plot, modelUtils)
+S3method(predict, modelUtils)
+S3method(coefficients, modelUtils)
+S3method(coef, modelUtils)
+S3method(residuals, modelUtils)
+S3method(print, summary.modelUtils)
+
+
