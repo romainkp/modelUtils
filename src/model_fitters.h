@@ -30,6 +30,7 @@ int R_MODEL_DEBUG_LEVEL;
 /** snagged from R. **/
 static const double THRESH = 30;
 static const double MTHRESH = -30;
+static const double DOUBLE_EPS = 2.2204460492503131e-16;
 static const double INVEPS = 1/DOUBLE_EPS;
 
 static const double MY_ZERO = (DOUBLE_EPS*100);
