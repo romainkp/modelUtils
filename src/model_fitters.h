@@ -17,7 +17,7 @@
 #define MODEL_ERROR_UNKNOWN             10
 
 /** global constants specifying the debug level. **/
-int R_MODEL_DEBUG_LEVEL;   
+int R_MODEL_DEBUG_LEVEL;
 
 #define R_MODEL_DEBUG_TRACE   1
 #define R_MODEL_DEBUG_LOW     2 
@@ -27,12 +27,15 @@ int R_MODEL_DEBUG_LEVEL;
 #define MODEL_BINOMIAL 2
 #define MODEL_MULTINOMIAL 3
 
+/** starting with R 4.3.0 , DBL_EPSILON is no loger defined in R.h file **/
+#ifndef DOUBLE_EPS
+# define DOUBLE_EPS 2.2204460492503131e-16
+#endif
+
 /** snagged from R. **/
 static const double THRESH = 30;
 static const double MTHRESH = -30;
-static const double DOUBLE_EPS = 2.2204460492503131e-16;
 static const double INVEPS = 1/DOUBLE_EPS;
-
 static const double MY_ZERO = (DOUBLE_EPS*100);
 
 
