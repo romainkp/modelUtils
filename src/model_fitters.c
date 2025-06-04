@@ -12,7 +12,7 @@
 
 #include "model_fitters.h"
 
-
+int R_MODEL_DEBUG_LEVEL = 10;
 
 void get_epsilon_compare(double* eps) {
   *eps = MY_ZERO;
